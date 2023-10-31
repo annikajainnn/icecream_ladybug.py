@@ -1,0 +1,330 @@
+import turtle as churner
+line = churner.Turtle()
+#creates table as a black line
+line.pensize(5)
+line.color("black")
+line.penup()
+line.right(90)
+line.forward(150)
+line.left(90)
+line.pendown()
+line.backward(370)
+line.forward(740)
+
+#creates cone
+import turtle as churner
+painter = churner.Turtle()
+painter.goto(6,-120)
+painter.pensize(20)
+x = input("brown or tan?: ") #asks user for input for color of cone
+if x == "tan":
+    painter.color("tan")
+else:
+    painter.color("brown")
+   
+painter.begin_fill()
+painter.forward(40)
+painter.left(245)
+painter.forward(60)
+painter.left(230)
+painter.forward(60)
+painter.end_fill()
+painter.pensize(5)
+painter.color("white")
+# first line
+painter.right(150)
+painter.backward(10)
+painter.forward(65)
+painter.left(60)
+painter.penup()
+painter.forward(20)
+painter.pendown()
+# second line
+painter.left(120)
+painter.penup()
+painter.forward(10)
+painter.pendown()
+painter.forward(50)
+painter.right(230)
+painter.penup()
+painter.forward(20)
+painter.pendown()
+# third line
+painter.left(120)
+painter.backward(20)
+painter.forward(55)
+#fourth line
+painter.right(30)
+painter.penup()
+painter.forward(30)
+painter.right(150)
+painter.forward(17)
+painter.pendown()
+painter.forward(70)
+# fifth line
+painter.penup()
+painter.left(60)
+painter.forward(20)
+painter.left(120)
+painter.forward(10)
+painter.pendown()
+painter.forward(55)
+# sixth line
+painter.right(150)
+painter.penup()
+painter.forward(35)
+painter.pendown()
+painter.right(100)
+painter.penup()
+painter.forward(5)
+painter.pendown()
+painter.forward(50)
+# seventh line
+painter.right(60)
+painter.penup()
+painter.forward(20)
+painter.pendown()
+painter.right(50)
+painter.penup()
+painter.backward(10)
+painter.pendown()
+painter.forward(30)
+# eighth line
+painter.right(30)
+painter.penup()
+painter.forward(20)
+painter.right(40)
+painter.forward(10)
+painter.pendown()
+painter.forward(17)
+# ninth line
+painter.right(60)
+painter.penup()
+painter.forward(75)
+painter.right(120)
+painter.forward(30)
+painter.pendown()
+painter.backward(5)
+painter.forward(45)
+
+import turtle as churner
+
+#creates the first Scoop
+#creates the first scoop base
+z = input("what color scoop?(no brown): ") #asks user for color input
+
+
+if z == "brown":
+    print("any other color please!") #fail system
+else:
+    churner.speed(0)
+    churner.pencolor(z)
+    churner.fillcolor(z)
+    churner.penup()
+    churner.goto(10,13)
+    churner.pendown()
+    churner.begin_fill()
+    churner.circle(38)
+    churner.end_fill()
+
+#sets up the proper varibles
+    x = -22
+    y = 17
+    a = 14
+
+#creates the squiggles under the ice cream
+for loop in range(3):
+    churner.penup()
+    churner.pencolor(z)
+    churner.fillcolor(z)
+    churner.right(a)
+    churner.goto(x,y)
+    churner.pendown()
+    churner.begin_fill()
+    churner.circle(10,360,3)
+    churner.end_fill()
+    churner.penup()
+    x += 8
+    y += -3
+    a += 7
+
+x = 2
+y = 8
+a = 345
+
+#second part of squiggles
+for loop in range(5):
+    churner.penup()
+    churner.pencolor(z)
+    churner.fillcolor(z)
+    churner.right(a)
+    churner.goto(x,y)
+    churner.pendown()
+    churner.begin_fill()
+    churner.circle(10,360,3)
+    churner.end_fill()
+    churner.penup()
+    x += 8
+    y += 3
+    a += 5
+
+#creates the second Scoop
+#creates the second scoop base
+d = input("waht color?(no brown): ")
+if d == "brown":
+    print("any other color!")
+else:
+    churner.speed(0)
+    churner.pencolor(d)
+    churner.fillcolor(d)
+    churner.penup()
+    churner.goto(-12,-40)
+    churner.pendown()
+    churner.begin_fill()
+    churner.circle(38)
+    churner.end_fill()
+
+x = -22
+y = -45
+a = 14 
+
+#creates the squiggles under the ice cream
+for loop in range(3):
+    churner.penup()
+    churner.pencolor(d)
+    churner.fillcolor(d)
+    churner.right(a)
+    churner.goto(x,y)
+    churner.pendown()
+    churner.begin_fill()
+    churner.circle(10,360,3)
+    churner.end_fill()
+    churner.penup()
+    x += 8
+    y += -3
+    a += 7
+
+
+x = 2 
+y = -45 
+a = 356 
+
+#creates the second squiggles under the ice cream
+for loop in range(5):
+    churner.penup()
+    churner.pencolor(d)
+    churner.fillcolor(d)
+    churner.right(a)
+    churner.goto(x,y)
+    churner.pendown()
+    churner.begin_fill()
+    churner.circle(10,360,3)
+    churner.end_fill()
+    churner.penup()
+    x += 8
+    y += 3
+    a += 5
+
+
+#creates the third Scoop
+#creates the third scoop base
+u = input("what color(no brown)?: ")
+if u == "brown":
+    print("any other color!")
+else:
+    churner.speed(0)
+    churner.pencolor(u)
+    churner.fillcolor(u)
+    churner.penup()
+    churner.goto(-11,-50) 
+    churner.pendown()
+    churner.begin_fill()
+    churner.circle(38)
+    churner.end_fill()
+
+x = -16 
+y = -100 
+a = 345 
+
+#creates the squiggles under the ice cream
+for loop in range(3):
+    churner.penup()
+    churner.pencolor(u)
+    churner.fillcolor(u)
+    churner.right(a)
+    churner.goto(x,y)
+    churner.pendown()
+    churner.begin_fill()
+    churner.circle(10,360,3)
+    churner.end_fill()
+    churner.penup()
+    x += 8
+    y += -3
+    a += 7
+
+x = 2 
+y = -107 
+a = 0 
+
+#creates the second squiggles under the ice cream
+for loop in range(6):
+    churner.penup()
+    churner.pencolor(u)
+    churner.fillcolor(u)
+    churner.right(a)
+    churner.goto(x,y)
+    churner.pendown()
+    churner.begin_fill()
+    churner.circle(10,360,3)
+    churner.end_fill()
+    churner.penup()
+    x += 8
+    y += 3
+    a += 5
+
+churner.speed(10)
+#imports a sun image and pairs it with turtle
+sun = 'sun.gif'
+wn = churner.Screen()
+wn.addshape(sun)
+churner.speed(0)
+churner.shape(sun)
+churner.penup()
+churner.right(200)
+churner.goto(-350,220)
+churner.speed(1)
+churner.circle(1000,50)
+
+#imports a ladybug image and pairs it with turtle
+import turtle as trtl
+ladybug = 'ladybug.gif'
+wn = trtl.Screen()
+wn.addshape(ladybug)
+#full ladybug animation
+trtl.speed(0)
+trtl.shape(ladybug)
+trtl.penup()
+trtl.left(-20)
+trtl.goto(400,-84)
+trtl.speed(1)
+trtl.forward(-300)
+for loop in range(50):
+    trtl.forward(0)
+    trtl.forward(0)
+trtl.speed(1)
+trtl.forward(-30)
+trtl.forward(30)
+for loop in range(20):
+    trtl.forward(0)
+    trtl.forward(0)
+trtl.speed(4)
+trtl.left(90)
+trtl.forward(80)
+trtl.forward(-80)
+trtl.forward(80)
+trtl.forward(-80)
+trtl.forward(80)
+trtl.forward(-80)
+
+wn = churner.Screen()
+wn.mainloop()
